@@ -1,3 +1,4 @@
+-- Скрипт создания базы данных PostgreSQL
 -- Создание таблицы Classes
 CREATE TABLE Classes (
 	class VARCHAR(100) NOT NULL,
@@ -35,6 +36,7 @@ CREATE TABLE Results (
 	FOREIGN KEY (race) REFERENCES Races(name)
 );
 
+-- Скрипт наполнения базы данными
 -- Вставка данных в таблицу Classes
 INSERT INTO Classes (class, type, country, numDoors, engineSize, weight) VALUES
 ('SportsCar', 'Racing', 'USA', 2, 3.5, 1500),
