@@ -115,7 +115,7 @@ select
 	country car_country
 from car_class_results
 where car_avg_pos < class_avg_pos
-
+order by car_class, average_position;
 
 -- Задача 5
 --Определить, какие классы автомобилей имеют наибольшее количество автомобилей с низкой средней позицией (больше 3.0) 
